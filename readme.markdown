@@ -16,4 +16,4 @@ Require.js is used for module loading.
 Application is live at https://apps.facebook.com/tictactoegame/  
 Keep in mind that this is a multiplayer game therefore at least two players are necessary :)
 
-Have fun, 
+Have fun,
