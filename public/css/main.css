@@ -1,0 +1,303 @@
+.hidden {
+	display: none;
+}
+
+.horizontal,.icon.horizontal {
+	display: inline-block;
+	vertical-align: top;
+}
+
+.nopadmad {
+	margin: 0px;
+	padding: 0px;
+}
+
+.loader {
+	background-image: url("/img/loading.gif");
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 200px;
+	width: 200px;
+}
+
+/************TOP***********/
+html,body {
+	padding: 0px;
+	margin: 0px;
+	height: 100%;
+	font-family: Lucida Grande, Lucida Sans, Arial, sans-serif;
+}
+
+.top {
+	background-color: #33AACC;
+	border: 1px solid #3344AA;
+	height: 25px;
+	padding: 10px;
+}
+
+.top .spacer {
+	width: 17%;
+}
+
+.top .title {
+	width: 50%;
+	color: white;
+	size: 20px;
+	font-weight: bold;
+	padding-top: 3px;
+}
+
+div.top div.fbInviteFriends {
+	font-weight: lighter;
+	padding: 2px;
+}
+
+/************BOTTOM LEFT***********/
+.bottom .left {
+	width: 84%;
+	float: left;
+}
+
+/************BOTTOM RIGHT***********/
+.bottom .right {
+	width: 15%;
+	height: 100%;
+	float: right;
+	background: #F2F4F8;
+	border-left: 1px solid #D2D4D8;
+}
+
+/************ONLINE PLAYERS***********/
+.bottom .right .onlinePlayers {
+	
+}
+
+.bottom .right .onlinePlayers .title {
+	text-align: center;
+	font-size: 13px;
+	background-color: #BBDDFF;
+	color: #004499
+}
+
+.bottom .right .onlinePlayers .player {
+	font-size: 13px;
+	color: #0099AA;
+}
+
+.bottom .right .onlinePlayers .player.self {
+	background-color: #A2E4FF;
+}
+
+.bottom .right .onlinePlayers .player.opponent {
+	cursor: pointer;
+}
+
+.bottom .right .onlinePlayers .player.opponent:hover {
+	background-color: #CCEEFF;
+}
+
+.bottom .right .onlinePlayers .player .ui-state-error {
+	background: transparent;
+	border: none;
+}
+
+/************SEPARATOR***********/
+.bottom .right div.separator {
+	height: 1px;
+	padding: 5px 0;
+	background-color: #E2E4E8;
+	border-bottom: 1px solid #D2D4D8;
+	border-bottom: 1px solid #D2D4D8;
+}
+
+/************CHALLENGES***********/
+.bottom .right .challenges {
+	
+}
+
+.bottom .right .challenges .challenge {
+	border-bottom: 1px solid #D2D4D8;
+	text-align: center;
+}
+
+.bottom .right .challenges .challenge .text {
+	font-size: 9px;
+}
+
+.bottom .right .challenges .challenge .text .name {
+	font-size: 13px;
+	color: #0099AA;
+}
+
+.bottom .right .challenges .challenge .action {
+	font-size: 12px;
+	color: #0033AA;
+	text-decoration: underline;
+	cursor: pointer;
+	padding: 2px 5px;
+}
+
+/************CHAT***********/
+.chat {
+	margin-left: 10px;
+}
+
+.chat .public {
+	background-color: #F0F9FF;
+	height: 200px;
+	overflow-y: scroll;
+}
+
+.chat .public .partial {
+	background-color: #FFF0F0;
+}
+
+.chat .public .prefix {
+	width: 60px;
+}
+
+.chat .public .text {
+	max-width: 85%;
+	word-wrap: break-word;
+	padding-left: 5px;
+}
+
+}
+.chat .private {
+	
+}
+
+.chat .private input {
+	width: 100%;
+}
+
+/************LOUNGE***********/
+.openGames {
+	height: 100px;
+}
+
+.chatContainer {
+	width: 100%;
+}
+
+/************GAME BOARD***********/
+.gameBoard {
+	width: 100%;
+	text-align: center;
+}
+
+.gameBoard .player,.players .vs {
+	height: 210px;
+}
+
+.gameBoard .player {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.gameBoard .player .playerContainer {
+	width: 100px;
+}
+
+.gameBoard .photo {
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;
+	height: 180px;
+}
+
+.gameBoard .photo img {
+	vertical-align: middle;
+}
+
+.gameBoard .arena {
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+.gameBoard .gameScore .dash {
+	font-size: 40px;
+	color: black;
+	padding-top: 8px;
+}
+
+.gameBoard .gameScore .score {
+	font-size: 40px;
+	padding-top: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+	color: #CC0000;
+	padding-left: 20px
+}
+
+.gameBoard .gameScore .score#player1_wins {
+	
+}
+
+.gameBoard .gameScore .score#player2_wins {
+	
+}
+
+.gameBoard .result .button {
+	padding: 5px;
+	width: 250px;
+}
+
+.gameBoard #game_map {
+	border: 1px solid #000;
+	clear: both;
+	float: left;
+}
+
+.gameBoard #game_map .cell {
+	cursor: pointer;
+	float: left;
+	border: 1px solid #000;
+	width: 60px;
+	height: 60px;
+	line-height: 60px;
+	font-size: 30px;
+	text-align: center;
+}
+
+.gameBoard .clear {
+	clear: both;
+	line-height: 0px;
+}
+
+.gameBoard #game_map .player0_cell {
+	color: #cc0000;
+}
+
+.gameBoard #game_map .player1_cell {
+	color: #0000cc;
+}
+
+.gameBoard #game_map .hover {
+	background: #DFE1E3;
+}
+
+.gameBoard #game_map .win {
+	background: #D3E7DC;
+}
+
+.gameBoard #player_mark,#player_name {
+	padding: 0px 3px;
+}
+
+.gameBoard .end_game,#quiter {
+	display: none;
+	margin: auto;
+}
+
+.gameBoard #winner_name {
+	text-decoration: underline;
+}
+
+.gameBoard table {
+	clear: both;
+}
+
+.gameBoard td {
+	text-align: center;
+}

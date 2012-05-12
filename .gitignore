@@ -1,0 +1,5 @@
+.env*
+.project
+.settings
+node_modules
+config/config.*

@@ -1,0 +1,45 @@
+<h3 class="currentMove">
+	<span id="player_name"></span>make your move (<span id="player_mark"></span>)
+</h3>
+
+<div class="player player0 horizontal ui-widget-header ui-state-default ui-corner-all"></div>
+
+<div class="arena horizontal">
+	<div id="game_map"></div>
+</div>
+
+<div class="player player1 horizontal ui-widget-header ui-state-default ui-corner-all"></div>
+
+<div class="gameScore">
+	<div class="horizontal score" id="player0_wins">0</div>
+	<div class="horizontal dash">:</div>
+	<div class="horizontal score" id="player1_wins">0</div>
+</div>
+
+<div class="result">
+	<div>
+		<h3 id="winner" class="end_game">
+			And the winner is: <span id="winner_name"></span>
+		</h3>
+		<h3 id="quiter">
+			<span id="quiter_name"></span> has left the game.
+		</h3>
+	</div>
+
+	<div class="end_game restart">
+		<div class="horizontal text">restart</div>
+		<div class="horizontal select">
+			<input type="checkbox"<% if( 1 == selfIndex ){ %> disabled="disabled" class="opponent"<% } %>/>
+		</div>
+		<div class="horizontal spacer"></div>
+		<div class="horizontal select">
+			<input type="checkbox"<% if( 0 == selfIndex ){ %> disabled="disabled" class="opponent" <% } %>/>
+		</div>
+	</div>
+
+	<div class="end_game button quit ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only">
+		<div id="ask_quit">
+			<div id="quit_game"></div>
+		</div>
+	</div>
+</div>

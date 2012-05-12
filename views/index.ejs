@@ -1,0 +1,35 @@
+<html>
+  <head>
+	<script data-main="/js/main" src="/js/lib/require/require.min.js"></script>
+	<link type="text/css" rel="stylesheet" href="/css/jquery-ui-1.8.18.custom.css" />
+	<link type="text/css" rel="stylesheet" href="/css/jquery.contextMenu.css" />
+	<link type="text/css" rel="stylesheet" href="/css/main.css" />
+	<title>TicTacToe</title>
+  </head>
+  <body>
+  <script>
+  	var app;
+  	var globalConfig ={
+  		domainUrl :'<%=GLOBAL.globalConfig.DOMAIN_URL%>',
+  		appUrl :'<%=GLOBAL.globalConfig.APP_URL%>',
+  		appId :'<%=GLOBAL.globalConfig.FACEBOOK_APP_ID%>',
+  		me : <%-JSON.stringify(me)%>,
+  	}; 
+  </script>
+  
+  	<div class="top ui-widget-header">
+  		<div class="horizontal spacer"></div>
+  		<div class="horizontal title"><h3 class="nopadmad">TIC TAC TOE</h3></div>
+		<div class="horizontal fbInviteFriends ui-corner-all ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only"> Invite Your Friends</div>
+	</div>
+	<div class="bottom">
+		<div class="left">
+  			<div class="pageContainer"></div>
+  			<div class="chatContainer"></div>
+		</div>
+		<div class="right">
+		</div>
+	</div>
+  </body>
+</html>
+	
